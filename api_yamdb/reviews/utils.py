@@ -1,6 +1,6 @@
-from api_yamdb.settings import DEFAUTL_FROM_EMAIL
-
 from django.core.mail import send_mail
+
+from api_yamdb.settings import DEFAUTL_FROM_EMAIL
 
 
 def send_mail_to_user(email, confirmation_code):
