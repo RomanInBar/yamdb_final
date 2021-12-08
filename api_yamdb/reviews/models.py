@@ -1,11 +1,10 @@
 import uuid
 
+from api.validators import year_validator
 from django.contrib.auth.models import AbstractUser
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from django.db.models import constraints
-
-from api.validators import year_validator
 
 
 class User(AbstractUser):
@@ -142,8 +141,7 @@ class Review(models.Model):
         verbose_name_plural = 'Отзывы'
         constraints = [
             constraints.UniqueConstraint(
-                fields=['author', 'title'],
-                name='unique_review'
+                fields=['author', 'title'], name='unique_review'
             )
         ]
 
