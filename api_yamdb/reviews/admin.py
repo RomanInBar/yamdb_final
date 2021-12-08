@@ -3,7 +3,6 @@ from django.db.models import Avg
 from django.urls import reverse
 from django.utils.html import format_html
 from django.utils.http import urlencode
-
 from reviews import models
 
 
