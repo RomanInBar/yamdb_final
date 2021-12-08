@@ -1,3 +1,4 @@
 # yamdb_final
 yamdb_final  
-![example workflow](https://github.com/RomanInBar/yamdb_final/blob/master/.github/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/RomanInBar/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+

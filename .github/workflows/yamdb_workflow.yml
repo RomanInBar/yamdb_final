@@ -2,7 +2,7 @@ name: Yamdb-final
 on: [push]
 jobs:
   tests:
-    name: Flake8 and project tests
+    name: Flake8
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,7 +18,8 @@ jobs:
       - name: Test with flake8 and django tests
         run: |
           python -m flake8
-          pytest
+          python -m pytest
+
   build_and_push_to_doker_hub:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
