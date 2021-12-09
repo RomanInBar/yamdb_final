@@ -37,7 +37,7 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2
         with:
-          directory: "api_yamdb/"
+          context: api_yamdb/
           push: true
           tags: robin532/yamdb_final:v1.2
   deploy:
