@@ -7,7 +7,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: robin532/yamdb_final
+    image: robin532/yamdb_final:v1.2
     build: ../api_yamdb/
     restart: always
     volumes:
