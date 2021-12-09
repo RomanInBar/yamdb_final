@@ -52,8 +52,8 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
-          proxy_username: ${{ secrets.PROXY_USERNAME }}
           script: |
+            cd ${{ secrets.USER }}
             ls
             pwd
             sudo docker-compose stop
