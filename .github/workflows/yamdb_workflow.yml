@@ -38,7 +38,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: robin532/yamdb_final:latest
+          tags: robin532/yamdb_final:v1.2
   deploy:
     name: Deploy image and start containers
     runs-on: ubuntu-latest
