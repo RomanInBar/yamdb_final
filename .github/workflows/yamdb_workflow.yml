@@ -52,7 +52,8 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
-          proxy_username: admin
+          context:
+            proxy_username: admin
           script: |
             sudo docker-compose stop
             sudo docker-compose rm web
