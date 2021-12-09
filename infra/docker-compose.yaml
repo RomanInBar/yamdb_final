@@ -4,8 +4,6 @@ services:
     image: postgres:13.0-alpine
     volumes: 
       - /var/lib/postgresql/data/
-    build:
-      context: /home/admin/
     env_file:
       - ./.env
   web:
